@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Packages.css";
 
 const Packages = (props: any) => {
+  console.log(props.id)
+  const [id, setId] = useState(props.id);
+
+  const navigate = useNavigate();
+
   const addPackageHandler = (e: any) => {
     console.log("Add Package Button Clicked!!");
   };
 
+  const onDetailClickHandler = (event:any, id:any) =>{
+    navigate(`/package-detail/${id}`);
+    debugger
+    console.log(event, id)
+  }
   return (
     <>
       <div className="container pt-3 pb-3 mt-2">
@@ -31,7 +42,7 @@ const Packages = (props: any) => {
                 <h3 className="card-title">{props.title}</h3>
                 <p className="card-text fs-4">{props.desc}</p>
                 <div className="d-flex justify-content-end">
-                  <button className="btn btn-primary btn-lg">Details</button>
+                  <button className="btn btn-primary btn-lg" onClick={(e)=>{onDetailClickHandler(e, id)}}>Details</button>
                 </div>
               </div>
             </div>
@@ -79,7 +90,7 @@ const Packages = (props: any) => {
                 <h3 className="card-title">{props.title}</h3>
                 <p className="card-text fs-4">{props.desc}</p>
                 <div className="d-flex justify-content-end">
-                  <button className="btn btn-primary btn-lg">Details</button>
+                  <button className="btn btn-primary btn-lg" onClick={(e)=>{onDetailClickHandler(e, id)}}>Details</button>
                 </div>
               </div>
             </div>

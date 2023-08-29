@@ -1,20 +1,19 @@
-import React from 'react';
-import './App.css';
-import TopNav from './components/topNav/TopNav';
+import React from "react";
+import "./App.css";
+import TopNav from "./components/topNav/TopNav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Packages from './components/packages/Packages';
-
+import PackagesPage from "./pages/packages-page/PackagesPage";
+import PackageDetail from "./pages/packageDetail-page/PackageDetail";
 function App() {
-  const packageDetails = {
-    title: "Unveiling Coorg",
-    desc:"A Serene Escape"
-  }
   return (
     <Router>
       <div className="">
-      <TopNav/>
-      <Packages title={packageDetails.title} desc={packageDetails.desc}></Packages>
-    </div>
+        <TopNav />
+      </div>
+      <Routes>
+        <Route path="/packages" element={<PackagesPage />} />
+        <Route path="/package-detail/:id" element={<PackageDetail/>}></Route>
+      </Routes>
     </Router>
   );
 }
