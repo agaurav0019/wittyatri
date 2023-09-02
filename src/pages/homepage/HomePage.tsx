@@ -21,7 +21,7 @@ const HomePage = () => {
             </div>
             <div className="col-lg-5 col-md-12 col-sm-12 mb-3 d-flex">
               <div>
-                <img className="img-fluid" src={imgOne} alt="Image"></img>
+                <img className="img-fluid" src={imgOne} alt="aside"></img>
               </div>
             </div>
           </div>

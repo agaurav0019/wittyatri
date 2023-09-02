@@ -37,21 +37,21 @@ function Carousel() {
               <img
                 src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
                 className="d-block w-100 carousel-img"
-                alt="..."
+                alt="carousel"
               />
             </div>
             <div className="carousel-item">
               <img
                 src="https://cdn.pixabay.com/photo/2020/03/06/15/48/sunset-4907425_1280.jpg"
                 className="d-block w-100 carousel-img"
-                alt="..."
+                alt="carousel"
               />
             </div>
             <div className="carousel-item">
               <img
                 src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
                 className="d-block w-100 carousel-img"
-                alt="..."
+                alt="carousel"
               />
             </div>
           </div>

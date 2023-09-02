@@ -10,7 +10,7 @@ const TopNav = () => {
         <div className="container-fluid mt-1 mb-1">
           <div className="wittyHome ms-3">
             <Link to="/">
-              <img className="wittyLogo" src={wittylogo}></img>
+              <img className="wittyLogo" src={wittylogo} alt="wittyatri"></img>
               <span className="wittyLabel">Wittyatri</span>
             </Link>
           </div>

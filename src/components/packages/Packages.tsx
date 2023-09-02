@@ -13,6 +13,7 @@ const Packages = (props: any) => {
   };
 
   const onDetailClickHandler = (event:any, id:any) =>{
+    setId(id);
     navigate(`/package-detail/${id}`);
     debugger
     console.log(event, id)
@@ -36,7 +37,7 @@ const Packages = (props: any) => {
               <img
                 src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwZGVzdGluYXRpb258ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                 className="card-img-top"
-                alt="..."
+                alt="carousel"
               />
               <div className="card-body">
                 <h3 className="card-title">{props.title}</h3>
@@ -52,7 +53,7 @@ const Packages = (props: any) => {
               <img
                 src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwZGVzdGluYXRpb258ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                 className="card-img-top"
-                alt="..."
+                alt="carousel"
               />
               <div className="card-body">
                 <h3 className="card-title">{props.title}</h3>
@@ -68,7 +69,7 @@ const Packages = (props: any) => {
               <img
                 src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwZGVzdGluYXRpb258ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                 className="card-img-top"
-                alt="..."
+                alt="carousel"
               />
               <div className="card-body">
                 <h3 className="card-title">{props.title}</h3>
@@ -84,7 +85,7 @@ const Packages = (props: any) => {
               <img
                 src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwZGVzdGluYXRpb258ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                 className="card-img-top"
-                alt="..."
+                alt="carousel"
               />
               <div className="card-body">
                 <h3 className="card-title">{props.title}</h3>
