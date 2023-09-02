@@ -30,7 +30,7 @@ const TopNav = () => {
             <form className="d-flex">
               <div className="d-flex ">
                 <div className="logIn me-5">
-                  <Link to="/login">Login</Link>
+                  <Link to="/packages">Login</Link>
                 </div>
                 {/* <div className="signUp me-3">
                   <Link to="/signup">Signup</Link>
