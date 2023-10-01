@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PackagesPage from "./pages/packages-page/PackagesPage";
 import PackageDetail from "./pages/packageDetail-page/PackageDetail";
 import HomePage from "./pages/homepage/HomePage";
+import ContactUsBody from "./pages/ContactUs/ContactUsBody";
+
 function App() {
   return (
     <Router>
@@ -15,6 +17,7 @@ function App() {
         <Route path="/" element = {<HomePage/>}></Route>
         <Route path="/packages" element={<PackagesPage />} />
         <Route path="/package-detail/:id" element={<PackageDetail/>}></Route>
+        <Route path="/ContactUs" element = {<ContactUsBody/>}></Route>
       </Routes>
     </Router>
   );

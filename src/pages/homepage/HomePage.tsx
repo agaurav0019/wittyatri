@@ -1,8 +1,21 @@
 import React from 'react'
 import imgOne from "../../assets/side-image.png"
 import "./HomePage.css"
+import { useNavigate } from 'react-router-dom';
+
+// const redirectToGoogleForm = () => {
+//   // Define the URL of your Google Form
+//   const googleFormURL = 'https://docs.google.com/forms/your-form-url-here';
+
+//   // Use window.location.href to redirect the user to the Google Form
+//   window.location.href = googleFormURL;
+// };
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const onclickhandler= ()=> {
+    navigate("/ContactUs")
+  }
   return (
     <div>
       <>
@@ -15,7 +28,7 @@ const HomePage = () => {
                   <h1>One stop solution to host your business for the trippy souls</h1>
                 </div>
                 <div className="join-button">
-                  <button className="btn joinNowBtn">Join now</button>
+                  <button className="btn joinNowBtn" onClick={onclickhandler}>Join now</button>
                 </div>
               </div>
             </div>
