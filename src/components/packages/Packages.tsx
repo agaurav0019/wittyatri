@@ -20,7 +20,7 @@ const Packages = (props: any) => {
   }
   return (
     <>
-      <div className="container pt-3 pb-3 mt-2">
+      <div className="container pt-2 pb-2 mt-1">
         <div className="d-flex justify-content-between">
           <h2>Packages</h2>
           <button
@@ -31,7 +31,7 @@ const Packages = (props: any) => {
           </button>
         </div>
 
-        <div className="row mt-5">
+        <div className="row mt-3">
           <div className="col-lg-3 col-md-4 col-sm-12 mb-3">
             <div className="card">
               <img

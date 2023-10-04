@@ -3,14 +3,6 @@ import imgOne from "../../assets/side-image.png"
 import "./HomePage.css"
 import { useNavigate } from 'react-router-dom';
 
-// const redirectToGoogleForm = () => {
-//   // Define the URL of your Google Form
-//   const googleFormURL = 'https://docs.google.com/forms/your-form-url-here';
-
-//   // Use window.location.href to redirect the user to the Google Form
-//   window.location.href = googleFormURL;
-// };
-
 const HomePage = () => {
   const navigate = useNavigate();
   const onclickhandler= ()=> {
