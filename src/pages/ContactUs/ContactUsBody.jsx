@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactUsBody.css";
+import img_call from "../../assets/Businessman on a call while sitting - 480x576.png";
 // import axios from "axios";
 
 const ContactUsBody = () => {
@@ -28,6 +29,9 @@ const ContactUsBody = () => {
     <div className="container" style={{ marginTop: "50px" }}>
       <div className="row">
         <div className="col-lg-5 col-md-12 col-sm-12">
+        <div style={{ marginTop: "30px" }}>
+            <img className="img-fluid" src={img_call} alt="broken" />
+        </div>    
         </div>
         <div className="col-lg-7 col-md-12 col-sm-12 text-center">
           <div className="formSection">
@@ -35,14 +39,14 @@ const ContactUsBody = () => {
               className="formTitle"
               style={{ paddingLeft: "60px", paddingRight: "60px" }}
             >
-              Get In Touch!
+              <b>Get In Touch!</b>
             </div>
             <div className="row">
               <div
                 className="col-lg-6 col-md-6 col-sm-12 text-start d-flex flex-column mb-3"
                 style={{ paddingLeft: "60px", paddingRight: "60px" }}
               >
-                <label>Your Name*</label>
+                <label>Your Name</label>
                 <input
                   type="text"
                   value={name}
@@ -55,7 +59,7 @@ const ContactUsBody = () => {
                 className="col-lg-6 col-md-6 col-sm-12 text-start d-flex flex-column mb-3"
                 style={{ paddingLeft: "60px", paddingRight: "60px" }}
               >
-                <label>Mobile*</label>
+                <label>Mobile</label>
                 <input
                   type="text"
                   vlaue={mobile}
@@ -68,7 +72,7 @@ const ContactUsBody = () => {
                 className="col-lg-6 col-md-6 col-sm-12 text-start d-flex flex-column mb-3"
                 style={{ paddingLeft: "60px", paddingRight: "60px" }}
               >
-                <label>Your E-mail*</label>
+                <label>Your E-mail</label>
                 <input
                   type="email"
                   value={email}
@@ -81,7 +85,7 @@ const ContactUsBody = () => {
                 className="col-lg-12 col-md-12 col-sm-12 text-start d-flex flex-column mb-3"
                 style={{ paddingLeft: "60px", paddingRight: "60px" }}
               >
-                <label className="mb-3">Comments*</label>
+                <label className="mb-3">Comments</label>
                 <textarea
                   type="text"
                   value={message}
